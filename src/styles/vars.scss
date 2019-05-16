@@ -1,0 +1,96 @@
+$color-primary: #07b9ad;
+$color-primary-light: #00dcc5;
+
+.vscroll {
+	overflow-x: hidden;
+	overflow-y: auto;
+}
+.hscroll {
+	overflow-x: auto;
+	overflow-y: hidden;
+}
+.scroll::-webkit-scrollbar {
+	-webkit-appearance: none;
+	width: 10px;
+	height: 10px;
+}
+.scroll::-webkit-scrollbar-button {
+	display: none;
+}
+.scroll::-webkit-scrollbar-thumb {
+	min-height: 2rem;
+	background: #d2d2d2;
+	background-clip: padding-box;
+	border: 3px solid #fff;
+	border-radius: 5px;
+}
+.scroll::-webkit-scrollbar-thumb:active {
+	background-color: #aaa;
+	border-width: 2px;
+}
+.scroll::-webkit-scrollbar-track {
+	background: #fff;
+}
+.ecrm-search-title {
+	height: 35px;
+	line-height: 45px;
+	font-size: 16px;
+	border-bottom: 1px solid $color-primary;
+	a {
+		width: 110px;
+		height: 35px;
+		color: #999;
+		display: block;
+		float: left;
+		text-align: center;
+		line-height: 35px;
+		text-decoration: none;
+	}
+	a.selected {
+		background: $color-primary;
+		color: #fff;
+	}
+}
+.ecrm-content-panel {
+	padding: 20px 20px 0px 20px;
+}
+.el-button--table-op:focus,
+.el-button--table-op:hover {
+	background: $color-primary;
+    border-color: $color-primary;
+    color: #fff;
+}
+.my-pagination {
+	width: 100%;
+	text-align: center;
+	.ecrm-mode-page-total {
+		padding: 0px 5px;
+	}
+	.el-button {
+		color: #666;
+	}
+}
+.el-button--bgsmall {
+    padding: 7px 9px;
+    font-size: 12px;
+    border-radius: 4px;
+    background-color: transparent;
+    border: 1px solid transparent;
+}
+.el-button--bgsmall:hover {
+	border: 1px solid $color-primary;
+	color: $color-primary;
+}
+.el-button--default:hover {
+	border: 1px solid $color-primary;
+	color: $color-primary;
+}
+.el-button-selected, .el-button-selected:hover, .el-button-selected:active, .el-button-selected:focus{
+	background-color: $color-primary;
+	border: 1px solid $color-primary;
+	color: white;
+}
+.tree-dialog {
+	max-height: 400px;
+    overflow-y: auto;
+}
